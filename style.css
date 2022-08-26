@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Srisakdi&display=swap');
+
+:root {
+    --font1: Times, serif;
+    --font2: 'Srisakdi', cursive;
+    --font3: 'Fira Sans', Times, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--font2)
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 10vh;
+    font-variant: small-caps;
+    font-family: var(--font3);
+    font-size: 5vw;
+}
+
+header > p {
+    padding-bottom: 10vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 5vw;
+    font-size: 2vw;
+}
+
+section > p {
+    padding: 3vh 3vw;
+    padding-left: 5vw;
+}
+
+section.normal {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+section.image {
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+    box-shadow: inset 0px 7px 45px 15px rgba(0, 0, 0, 45%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.image > p {
+    background-color: rgba(0, 0, 0, 0.726);
+    width: 40vw;
+
+    border: 1px dashed black;
+    border-radius: 2px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1.5vh 1.5vw;
+    font-family: var(--font1);
+    font-size: 1vw;
+}
+
+section#img1 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img2 {
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+}
+
